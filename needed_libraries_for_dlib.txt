@@ -1,0 +1,12 @@
+sudo apt get update
+sudo apt get upgrade 
+sudo apt-get install build-essential cmake pkg-config
+sudo apt install python3-distutils
+sudo apt-get install python3-setuptools
+sudo apt install git
+git clone https://github.com/davisking/dlib.git
+cd dlib
+mkdir build; cd build; cmake ..; cmake --build .
+cd ..
+python3 setup.py install
+pip install face-recognition
